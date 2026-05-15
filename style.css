@@ -61,3 +61,35 @@ body {
 form { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
 input, select { padding: 1rem; background: #222; border: 1px solid #444; color: white; border-radius: 5px; }
 .btn-submit { padding: 1rem; background: var(--primary); font-weight: bold; cursor: pointer; border: none; }
+/* Ana Buton Stili */
+.btn-primary, .btn-submit {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Yumuşak geçiş */
+    cursor: pointer;
+    border: 2px solid transparent;
+    z-index: 1;
+}
+
+
+.btn-primary:hover, .btn-submit:hover {
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-3px); /* Hafif yukarı kalkma */
+    box-shadow: 0 10px 20px rgba(187, 134, 252, 0.3); /* Parlama efekti */
+}
+
+.btn-primary:active, .btn-submit:active {
+    transform: translateY(-1px);
+}
+
+
+.service-card {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Kartın hafif büyümesi */
+    border-color: var(--primary);
+}
