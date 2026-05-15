@@ -137,3 +137,45 @@ input, select { padding: 1rem; background: #222; border: 1px solid #444; color: 
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+/* Responsive Tasarım Dokunuşları */
+@media (max-width: 768px) {
+    /* Navbar'ı dikey hale getir */
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    /* Hero bölümündeki yazıları küçült */
+    .hero h1 {
+        font-size: 2.5rem; 
+    }
+
+    .hero-content {
+        padding-top: 80px;
+    }
+
+    /* Servis kartlarını tek sütun yap */
+    .service-grid {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+    }
+
+    /* Formu genişlet */
+    .booking-container {
+        width: 90%;
+    }
+    
+    /* Daktilo efekti mobilde taşmasın diye ayar */
+    .typewriter {
+        font-size: 1.2rem;
+        white-space: normal; 
+        border-right: none;
+        animation: none; 
+    }
+}
