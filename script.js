@@ -14,3 +14,9 @@ buttons.forEach(button => {
         }, 100);
     });
 });
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 1000); // 1 saniye sonra kaybolur
+});
