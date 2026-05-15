@@ -94,4 +94,23 @@ input, select { padding: 1rem; background: #222; border: 1px solid #444; color: 
 .service-card:hover {
     transform: scale(1.05); /* Kartın hafif büyümesi */
     border-color: var(--primary);
+}.typewriter {
+    overflow: hidden;
+    border-right: .15em solid var(--primary); /* İmleç efekti */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary); }
 }
